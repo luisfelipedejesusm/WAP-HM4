@@ -18,7 +18,7 @@ function invalidUrl(){
     urlComponent = document.getElementById("url");
     url = urlComponent.value;
     resetComponent(urlComponent)
-    if(!/http:\/\/.*|https:\/\/.*/.test(url)){
+    if(!/^http:\/\/.*|^https:\/\/.*/.test(url)){
         document.getElementById("url").classList.add("is-invalid");
         return true;
     }
